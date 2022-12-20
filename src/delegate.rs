@@ -30,7 +30,6 @@ impl AppDelegate<AppState> for Delegate {
 
             match data.cpu.run() {
                 _ if empty => {
-                    println!("YES");
                     data.output = data.cpu.registers_str();
                 }
                 Ok(()) => {
